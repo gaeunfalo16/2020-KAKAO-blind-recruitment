@@ -11,13 +11,13 @@ int solution(string s)
 
   vector<string> v;
   int s_size = s.size();
-  for(int i = s_size / 2; i > 0; i--)
+  for(int i = s_size / 2; i > 0; i--) // * //
   {
     bool flag = true;
     tmp = s.substr(0, i);
     int cnt = 1;
     int idx = 0;
-    for(int j = i; j < s.size(); j++)
+    for(int j = i; j < s.size(); j++) 
     {
       tmp2 = s.substr(j, i);
       j+= (i - 1);
